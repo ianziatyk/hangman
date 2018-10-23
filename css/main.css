@@ -1,0 +1,119 @@
+body{
+	/*background-image: url('../images/giphy.gif');
+	height: 1000px;*/
+	width: auto;
+	/*background-repeat: no-repeat;
+	background-size: 100% 100%;*/
+	overflow: hidden;
+	
+}
+
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg,#F01818,#F0CC18,#43F018,#18F0EC,#1823F0,#F018F0);
+	background-size: 400% 400%;
+	animation: Gradient 80s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+input{
+	background-color: transparent;
+}
+
+#overallWrap{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	width: 100%;
+
+
+}
+#logo{
+	text-align: center;
+	margin-top: 10%;
+	margin-left: 10%;
+
+}
+#totalWrap{ margin-top: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-rows: 2fr 1fr 2fr 3fr;
+	width: 400px;
+	height: 600px;
+	/*border:2px transparent;*/
+	box-shadow: 10px 10px 100px;
+	border-radius: 10px;
+
+	}
+
+#totalWrap:hover{
+	transform: scale(1.30);
+
+
+}
+
+#title{width: 100%;
+	text-align: center;
+	font-family: 'Monoton', cursive;
+	font-size:  45px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 5px;
+}
+
+
+#wrapper{font-family: 'Permanent Marker', cursive;
+ font-size: 40px;
+ display: flex;
+
+}
+div{width: 100%;
+	height: 100px;
+	margin: 0 auto;
+
+	
+	
+}
+.holla{width: 50%;
+	border-bottom: 2px solid white;
+margin: 10px;
+margin-bottom:  -10px;}
+
+#box{
+	
+}
+.topPart{ width: 50%;
+	height: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.infoPart{width: 50%;
+	height: 100%
+	color: papayawhip;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-shadow: 1px 1px 5px aqua;
+	font-family: helvetica;
+	font-size: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */
