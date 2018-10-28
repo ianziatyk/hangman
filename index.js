@@ -81,10 +81,10 @@ let randomAnswerSetSpan = [...randomAnswerSet]
 let gameCheckAnswer = randomAnswerSetSpan.join('')
 let guessedLetB = correctGuess.sort()
 getHint.addEventListener('click',function(){
-	displayHint.innerHTML ='Hint: '+ randomHint;
+	displayHint.innerHTML = randomHint;
 })
 
-//This function makes boxes equal to the length of the word that is randomly being generated!!!
+//This function makes boxes equal to the length of the word that is randomly being generated
 function theBoxes(){
 	console.log(randomHint)
 	console.log(randomAnswer)
@@ -93,21 +93,14 @@ for (let i=0;i<randomAnswer.length;i++){
 	box.id= 'box'+i;
 	box.className = 'holla';
 		document.getElementById('wrapper').appendChild(box);
-		// box.style.border = '2px solid white';
-		// box.style.height = '100px';
-		// box.style.width = '100%';
-		// box.style.display = 'flex';
-		// box.style.flexDirection = 'row'
-		// box.style.margin= '10px';
 		document.getElementById('countText').innerHTML =("<img src='./images/Hangman-" +count+".png' width='120px' height='120px'>")
 		document.getElementById('guessLet').innerHTML = 'Incorrect Guesses: ' + incorrect
-
 	}
 
  }
-//this is the functioin being called so that on load the game is available!!
+//this is the functioin being called so that on load the game is available
  theBoxes()
-//I added this funtionality so that you can play the game without using the mouse!!
+//I added this funtionality so that you can play the game without using the mouse
  window.addEventListener('change', function(){
  	document.getElementById('submit').focus()
 })
@@ -149,7 +142,6 @@ for (let i=0;i<randomAnswer.length;i++){
 	}
 	if (result === true) {
 		correctGuess.push(playersGuess.value)
-		// console.log(correctGuess)
 	}
 	//this is if you guess incorrectly, the incorrect word gets pushed to an array displayed(innerHTML) on the
  if (result===false){
@@ -164,7 +156,6 @@ if (guessedLetB.sort().join('')==randomAnswerSetSpan.join('')
 ){		song1.play()
 		alert('you win!!')
 		document.body.style.animation= ('Gradient 1s ease infinite');
-		logo.innerHTML = "<img src='./images/PIR-logo-win.png' width='725px' height='725px'>"
 		document.getElementById("submit").disabled = true;
 		document.getElementById('getHint').disabled = true;
 		document.getElementById('playersGuess').disabled = true;
@@ -174,6 +165,10 @@ if (guessedLetB.sort().join('')==randomAnswerSetSpan.join('')
 		getHint.style.border = ('transparent')
 		playersGuess.style.color = ('transparent')
 		playersGuess.style.border = ('transparent')
+		document.body.style.background =('linear-gradient(-45deg,rgb(196, 1, 255),rgb(240, 5, 5),#43F018,#18F0EC,#1823F0,#F018F0)');
+		document.body.style.backgroundSize = ('400% 400%');
+		newGame.style.transform = ('scale(3)')
+
 		return
 		
 }
@@ -196,6 +191,7 @@ if (guessedLetB.sort().join('')==randomAnswerSetSpan.join('')
 		document.body.style.animation= ('Gradient 1s ease infinite');
 		document.body.style.background =('linear-gradient(-45deg,#ff0000, #ffffff)');
 		document.body.style.backgroundSize = ('400% 400%');
+		newGame.style.transform = ('scale(3)')
 
 		return
 

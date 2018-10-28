@@ -1,20 +1,16 @@
-body{
-	/*background-image: url('../images/giphy.gif');
-	height: 1000px;*/
-	width: auto;
-	/*background-repeat: no-repeat;
-	background-size: 100% 100%;*/
-	overflow: hidden;
-	
-}
+
 
 body {
-	width: 100wh;
-	height: 90vh;
+	width: 100%;
+	height: 100%;
 	color: #fff;
-	background: linear-gradient(-45deg,#F01818,#F0CC18,#43F018,#18F0EC,#1823F0,#F018F0);
+	background-color:rgb(221, 215, 215);
+	margin: 0 auto;
+	/* background: linear-gradient(-45deg,rgb(196, 1, 255),rgb(240, 5, 5),#43F018,#18F0EC,#1823F0,#F018F0);
 	background-size: 400% 400%;
 	animation: Gradient 80s ease infinite;
+	*/
+	 overflow: hidden;
 }
 
 @-webkit-keyframes Gradient {
@@ -28,41 +24,66 @@ body {
 		background-position: 0% 50%
 	}
 }
+
+#logo{
+	margin-left: 10px;
+
+}
 input{
 	background-color: transparent;
+	width: 10em;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: white;
+	font-size: 15px;
 }
+#searchSubmit{
+	border-color: white;
+	width: 80%;
+	margin-top: 25px;
+	text-align: center;
+	margin-right: 250px;
+}
+#bottomSubmits{
+	border-color: transparent;
+	width: 200px;
+}
+
 
 #overallWrap{
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-rows: auto;
 	width: 100%;
+	height: 100%;
 
 
 }
-#logo{
-	text-align: center;
-	margin-top: 10%;
-	margin-left: 10%;
-
+.sidebar{
+	display:grid;
+	grid-template-columns: 1fr 7fr;
+	width: 100%;;
+	height:100px;
+	background-color:rgb(100, 85, 85);
 }
-#totalWrap{ margin-top: 120px;
-	margin-left: auto;
-	margin-right: auto;
+#rightSidebar{
+	display: flex;
+	flex-direction: column;
+ 
+}
+
+
+#totalWrap{height:100%;
+	width: 50vw;
+	margin-top: 10px;
 	display: grid;
-	grid-template-rows: 2fr 1fr 2fr 3fr;
-	width: 400px;
-	height: 600px;
-	/*border:2px transparent;*/
-	box-shadow: 10px 10px 100px;
-	border-radius: 10px;
+	grid-template-rows: 2fr 6fr 3fr;
+	background-color: aliceblue;
+	border: 1px solid black;
+	box-shadow: 10px 3px 15px rgba(0,0,0,0.2);
 
 	}
 
-#totalWrap:hover{
-	transform: scale(1.30);
-
-
-}
 
 #title{width: 100%;
 	text-align: center;
@@ -74,9 +95,14 @@ input{
 }
 
 
-#wrapper{font-family: 'Permanent Marker', cursive;
- font-size: 40px;
- display: flex;
+#wrapper{	
+font-family: 'Permanent Marker', cursive;
+font-size: 45px;
+display: flex;
+background: linear-gradient(-45deg,rgb(196, 1, 255),rgb(240, 5, 5),#43F018,#18F0EC,#1823F0,#F018F0);
+background-size: 400% 400%;
+animation: Gradient 80s ease infinite;
+overflow: hidden; 
 
 }
 div{width: 100%;
@@ -87,16 +113,12 @@ div{width: 100%;
 	
 }
 .holla{width: 50%;
-	border-bottom: 2px solid white;
-margin: 10px;
+	border-bottom: 2px solid black;
 margin-bottom:  -10px;}
 
-#box{
-	
-}
 .topPart{ width: 50%;
 	height: 100%;
-	color: white;
+	color:black;
 	display: flex;
 	flex-direction: column;
 	margin-left: auto;
@@ -104,16 +126,72 @@ margin-bottom:  -10px;}
 	margin-left: auto;
 	margin-right: auto;
 }
+#hint{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: black;
+	text-align: center;
+	width: 80%;
+	font-size: larger;
+}
 
 .infoPart{width: 50%;
-	height: 100%
-	color: papayawhip;
+	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	text-shadow: 1px 1px 5px aqua;
 	font-family: helvetica;
 	font-size: 15px;
+	color: black;
 }
 
-/*# sourceMappingURL=main.css.map */
+.footer{
+	width: 99vw;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: black;
+	margin-top: 25px;
+
+}
+
+@media all and (min-width: 1px) and (max-width: 550px){
+.sidebar{
+
+	display: flex;
+	flex-direction:column;
+    width: 100%;
+    height: 230px;
+    background-color: rgb(100, 85, 85);
+
+}
+#searchSubmit{
+	border-color: white;
+	width: 80%;
+	margin-top: 125px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#rightSidebar{
+	margin-top: -100px;
+
+}
+
+#logo{
+	margin-left: 35%;
+}
+
+#totalWrap{
+	height: 80%;
+	grid-template-rows:  2fr 1fr 3fr 2fr;
+}
+
+.footer{
+	margin-top: -100px;
+}
+#wrapper{	
+	
+	font-size: 30px;
+}
+	/*# sourceMappingURL=main.css.map */
