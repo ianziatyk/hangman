@@ -115,7 +115,7 @@ for (let i=0;i<randomAnswer.length;i++){
 			return
 			
 		}
-			
+
 			let valueExists = playersGuess.value == randomAnswer[z];
 			let valueExistsNot = playersGuess.value == !randomAnswer[z];
 			let wasNotGuessedYet = !guessedLetB.includes(playersGuess.value);
@@ -167,7 +167,8 @@ if (guessedLetB.sort().join('')==randomAnswerSetSpan.join('')
 		playersGuess.style.border = ('transparent')
 		document.body.style.background =('linear-gradient(-45deg,rgb(196, 1, 255),rgb(240, 5, 5),#43F018,#18F0EC,#1823F0,#F018F0)');
 		document.body.style.backgroundSize = ('400% 400%');
-		newGame.style.transform = ('scale(3)')
+		newGame.style.transform = ('scale(1.5)');
+		newGame.style.textAlign = ('center');
 
 		return
 		
@@ -191,7 +192,7 @@ if (guessedLetB.sort().join('')==randomAnswerSetSpan.join('')
 		document.body.style.animation= ('Gradient 1s ease infinite');
 		document.body.style.background =('linear-gradient(-45deg,#ff0000, #ffffff)');
 		document.body.style.backgroundSize = ('400% 400%');
-		newGame.style.transform = ('scale(3)')
+		newGame.style.transform = ('scale(1.5)')
 
 		return
 
